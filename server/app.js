@@ -8,20 +8,19 @@ const PORT = process.env.PORT || 5000;
 
 const app = express();
 
-app.set('views', path.join(__dirname, '..source/template/pages'))
+app.set('views', path.join(__dirname, '../source/template/pages'))
 app.set('view engine', 'pug')
 
 
-app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../public')))
-
-app.use(routs)
+app.use(express.urlencoded({  extended: false }));
+app.use('/', routs)
 
 function start() {
   try {
-    app.listen(PORT, () => console.log(`App gas been started on port ${PORT}`));
+    app.listen(PORT, () => console.log(`App has been started on port ${PORT}`));
   } catch (e) {
-    console.log('Server Error :', e.message);
+    console.log(`Server Error: ${e.message}`);
     process.exit(1);
   }
 }
