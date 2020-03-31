@@ -1,21 +1,19 @@
-class AdminController {
-  async skillsData(req, res) {
+module.exports = {
+  skillsData: function(req, res) {
     try {
       console.log('req :', req.body);
     } catch (e) {
       res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова...' });
     }
-  }
-  async uploadData(req, res) {
+  },
+  uploadData: function(req, res) {
     try {
       console.log('req :', req.body);
     } catch (e) {
       res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова...' });
     }
-  }
-  getAdmin(req, res) {
+  },
+  getAdmin: function(req, res) {
     res.render('admin');
-  }
-}
-
-module.exports = new AdminController();
+  },
+};
