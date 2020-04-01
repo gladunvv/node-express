@@ -1,7 +1,7 @@
 const express = require('express');
-const path = require('path')
-const bodyParser = require('body-parser')
-const routes = require('./routes')
+const path = require('path');
+const bodyParser = require('body-parser');
+const routes = require('./routes');
 
 const app = express();
 
@@ -9,13 +9,13 @@ require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
 
-app.set('views', path.join(__dirname, '../source/template/pages'))
-app.set('view engine', 'pug')
+app.set('views', path.join(__dirname, '../source/template/pages'));
+app.set('view engine', 'pug');
 
-app.use(express.static(path.join(__dirname, '../public')))
-app.use(express.urlencoded({  extended: false }));
+app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.urlencoded({ extended: false }));
 
-app.use('/', routes)
+app.use('/', routes);
 
 function start() {
   try {
