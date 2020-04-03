@@ -5,4 +5,7 @@ const path = require('path');
 const adapter = new FileSync(path.join(__dirname, 'db.json'));
 const db = low(adapter);
 
+db.defaults({ products: [], user: {}, skills: {}, messages: [] })
+    .write();
+
 module.exports = db;

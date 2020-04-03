@@ -13,7 +13,8 @@ app.set('views', path.join(__dirname, '../source/template/pages'));
 app.set('view engine', 'pug');
 
 app.use(express.static(path.join(__dirname, '../public')));
-app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
 app.use('/', routes);
 
