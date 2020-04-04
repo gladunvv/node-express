@@ -14,6 +14,6 @@ module.exports = {
     }
   },
   getAdmin: function(req, res) {
-    res.render('admin');
+    res.render('admin', {title: 'Админ панель'});
   },
 };

@@ -3,6 +3,6 @@ module.exports = {
     console.log('res :', res.body);
   },
   getLogin: function(req, res) {
-    res.render('login');
+    res.render('login', {title: 'Авторизация'});
   },
 };

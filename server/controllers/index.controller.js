@@ -6,13 +6,13 @@ module.exports = {
       console.log('req :', req.body);
       db.get('messages')
         .push(req.body)
-        .write(); 
-      res.redirect('/')
+        .write();
+      res.redirect('/');
     } catch (e) {
       res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова...' });
     }
   },
   getIndex: function(req, res) {
-    res.render('index');
+    res.render('index', { title: 'Главная' });
   },
 };
