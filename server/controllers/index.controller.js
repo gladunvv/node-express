@@ -13,6 +13,7 @@ module.exports = {
     }
   },
   getIndex: function(req, res) {
-    res.render('index', { title: 'Главная' });
+    let skills = db.get('skills').value();
+    res.render('index', { title: 'Главная', skills});
   },
 };
