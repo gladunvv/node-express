@@ -14,6 +14,7 @@ module.exports = {
   },
   getIndex: function(req, res) {
     let skills = db.get('skills').value();
-    res.render('index', { title: 'Главная', skills});
+    let products = db.get('products').value();
+    res.render('index', { title: 'Главная', skills, products});
   },
 };

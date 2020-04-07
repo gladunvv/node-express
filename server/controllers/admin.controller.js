@@ -40,6 +40,7 @@ module.exports = {
         next(err);
         return;
       }
+      const { name, price } = fields;
       const fileName = path.join(upload, files.photo.name);
       fs.rename(files.photo.path, fileName, (err) => {
         if (err) {
@@ -47,6 +48,8 @@ module.exports = {
           return;
         }
       });
+      let src = fileName.substr(fileName.indexOf(path.sep));
+      db.get('products').push({ name, price, src }).write();
       res.redirect('/admin');
     });
   },
