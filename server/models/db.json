@@ -1,5 +1,51 @@
 {
-  "products": [],
+  "products": [
+    {
+      "name": "adfa",
+      "price": "",
+      "src": "/upload/photo_2020-03-06_19-05-44.jpg"
+    },
+    {
+      "name": "adfa",
+      "price": "",
+      "src": "/upload/photo_2020-03-06_19-05-44.jpg"
+    },
+    {
+      "name": "adfa",
+      "price": "",
+      "src": "/upload/photo_2020-03-06_19-05-44.jpg"
+    },
+    {
+      "name": "",
+      "price": "",
+      "src": "/upload/image_2020-02-14_19-22-29.png"
+    },
+    {
+      "name": "afdfa",
+      "price": "123",
+      "src": "/upload/image_2020-02-14_19-22-29.png"
+    },
+    {
+      "name": "fdsf123",
+      "price": "123",
+      "src": "/upload/IMG_20190521_184037-02.jpeg"
+    },
+    {
+      "name": "",
+      "price": "",
+      "src": "/upload/image_2020-02-14_19-22-29.png"
+    },
+    {
+      "name": "",
+      "price": "",
+      "src": "/upload/photo_2020-03-06_19-05-44.jpg"
+    },
+    {
+      "name": "fdfaf",
+      "price": "123",
+      "src": "/upload/IMG_1508.PNG"
+    }
+  ],
   "user": {},
   "messages": [],
   "skills": [
