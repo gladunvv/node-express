@@ -1,53 +1,11 @@
 {
-  "products": [
-    {
-      "name": "adfa",
-      "price": "",
-      "src": "/upload/photo_2020-03-06_19-05-44.jpg"
-    },
-    {
-      "name": "adfa",
-      "price": "",
-      "src": "/upload/photo_2020-03-06_19-05-44.jpg"
-    },
-    {
-      "name": "adfa",
-      "price": "",
-      "src": "/upload/photo_2020-03-06_19-05-44.jpg"
-    },
-    {
-      "name": "",
-      "price": "",
-      "src": "/upload/image_2020-02-14_19-22-29.png"
-    },
-    {
-      "name": "afdfa",
-      "price": "123",
-      "src": "/upload/image_2020-02-14_19-22-29.png"
-    },
-    {
-      "name": "fdsf123",
-      "price": "123",
-      "src": "/upload/IMG_20190521_184037-02.jpeg"
-    },
-    {
-      "name": "",
-      "price": "",
-      "src": "/upload/image_2020-02-14_19-22-29.png"
-    },
-    {
-      "name": "",
-      "price": "",
-      "src": "/upload/photo_2020-03-06_19-05-44.jpg"
-    },
-    {
-      "name": "fdfaf",
-      "price": "123",
-      "src": "/upload/IMG_1508.PNG"
-    }
-  ],
-  "user": {},
-  "messages": [],
+  "products": [],
+  "user": {
+    "login": "admin@gmail.com",
+    "password": "pass12",
+    "hash": "a0067b91875449854a08bcb19f2b82c29cabe3a8d29d733cfad5866d845b95537e89e74f0eecbe6f79f29a0f75e5f182edd978c4518f7d9651e72c4392061710bc926c9dd0392c4459c8fb5a7147f5f96380b859c2ca953e73e7f36f89a9e365ec382ea1c0f7f0987381e56759af72108e63bb1aebf49b1dece09702ae1f272b5b7a18f3260da06d8e0cf5c4beb6ab1e74dc0ff8413c818960ee8d4291cec9056d1d976a8c11851d7a83e56de2d59c9957cb50deeb033802169a5ade04c59d535da1493f922567d50dd3c4057d0515351eeb056af40722667f6d3297920c5b8b6947e89eac65ea9045648a77ea4366a5dee93045e16b9d7d577a09da9bc74aae627a6d030f378b01f5497dcd5934b5d58dddc3736e9e3a1a2e7c4182a61e6232d61754fb10be6c4d6710aa8a44433dad48cbf98aa6695fd94821d55bb663039205398cb9165fe2c1daf68e7a1c0ca552557ec62d39e7b7508e05fe510292bc29628eaeb193c3e8b513b0b6f38b86200471a4558eece4c54f82bfd878e60f27f1dc6cc32cf8765c18c84ef9dab0b763a779ca3d0cbe7ac9c91b5012754fc5c88d00c85527204d5ce4233d3f9416c2df79ca8025f24b24222cd77e47eade1a361c0fee54023dd66fdf588d276a9f54a412c26e43c93b6267783d7206707f7d03ee9bf981eb8ec85965b05d33694ec46d48518a27d8a419f1f4490683a9f6c66773",
+    "salt": "99b30d185d103db14bcc92f8fb0526b1"
+  },
   "skills": [
     {
       "id": "age",

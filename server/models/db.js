@@ -1,13 +1,23 @@
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 const path = require('path');
-
+const config = require('config');
+const { setPassword } = require('../lib/auth');
 const adapter = new FileSync(path.join(__dirname, 'db.json'));
 const db = low(adapter);
 
+let password = config.get('user').password;
+let login = config.get('user').login;
+let { hash, salt } = setPassword(password);
+
 db.defaults({
   products: [],
-  user: {},
+  user: {
+    login,
+    password,
+    hash,
+    salt,
+  },
   skills: [
     {
       id: 'age',

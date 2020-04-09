@@ -1,7 +1,7 @@
 const db = require('../models/db');
 
 module.exports = {
-  sendMessage: async function(req, res) {
+  sendMessage: function(req, res) {
     try {
       console.log('req :', req.body);
       db.get('messages')

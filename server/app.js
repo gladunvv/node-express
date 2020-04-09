@@ -4,12 +4,11 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const routes = require('./routes');
 const flash = require('express-flash');
+const config = require('config');
 
 const app = express();
 
-require('dotenv').config();
-
-const PORT = process.env.PORT || 5000;
+const PORT = config.get('port') || 5000;
 
 app.set('views', path.join(__dirname, '../source/template/pages'));
 app.set('view engine', 'pug');
@@ -21,7 +20,7 @@ app.use(
     cookie: {
       path: '/',
       httpOnly: true,
-      maxAge: 6000,
+      maxAge: 6000 * 100,
     },
     saveUninitialized: false,
     resave: false,

@@ -1,0 +1,7 @@
+{
+    "port": 5000,
+    "user": {
+        "login": "admin@gmail.com",
+        "password": "pass12"
+    }
+}

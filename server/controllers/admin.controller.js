@@ -60,6 +60,10 @@ module.exports.uploadData = (req, res, next) => {
 };
 
 module.exports.getAdmin = (req, res) => {
+  if (!req.session.isAdmin) {
+    res.redirect('/login');
+    return;
+  }
   let msgfile = req.flash('msgfile')[0];
   let skills = db.get('skills').value();
   res.render('admin', { title: 'Админ панель', msgfile, skills });
