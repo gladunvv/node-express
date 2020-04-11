@@ -3,5 +3,17 @@
     "user": {
         "login": "admin@gmail.com",
         "password": "pass12"
-    }
+    },
+    "mail": {
+        "subject": "Сообщение с сайта",
+        "smtp": {
+          "host": "smtp.gmail.com",
+          "port": 465,
+          "secure": true,
+          "auth": {
+            "user": "email",
+            "pass": "password"
+          }
+        }
+      }
 }
